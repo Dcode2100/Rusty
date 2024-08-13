@@ -1,1 +1,49 @@
-/target
+# Ignore the Cargo.lock file, but only if you're creating a library
+# If your project is an application, Cargo.lock should be included
+# For libraries, uncomment the next line:
+# Cargo.lock
+
+# Ignore the target directory, which contains compiled binaries and intermediate files
+/target/
+
+# Ignore the .vscode directory, which contains editor-specific settings
+/.vscode/
+
+# Ignore IDE directories
+/.idea/
+/*.sublime-workspace
+/*.sublime-project
+
+# Ignore files related to the rustup toolchain management
+**/*.rs.bk
+
+# Ignore files and directories created by editors or operating systems
+.DS_Store
+Thumbs.db
+
+# Ignore files related to debug output
+*.log
+*.stderr
+*.stdout
+
+# Ignore backup files
+*.bak
+*.swp
+
+# Ignore Cargo.lock backups
+Cargo.lock.bk
+
+# Ignore compiled dynamic libraries
+*.dll
+*.dylib
+*.so
+
+# Ignore executable files
+*.exe
+*.out
+
+# Ignore Rust Analyzer files
+/.rust-analyzer*
+
+# Ignore ctags
+tags
