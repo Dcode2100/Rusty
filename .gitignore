@@ -6,8 +6,6 @@
 # Ignore the target directory, which contains compiled binaries and intermediate files
 /target/
 
-# Ignore the .vscode directory, which contains editor-specific settings
-/.vscode/
 
 # Ignore IDE directories
 /.idea/
