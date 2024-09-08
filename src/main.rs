@@ -1,22 +1,22 @@
-fn main() {
+
 
 // ! Mutabiltiy implementation
 
-
+fn main() {
     let mut num: i32 = 3;
-    num = num + 1;
+    num += 1;
     println!("{}", num);
     
-    let mut s: &str = "Mutable string";  // A &str (string slice) is a reference to a string, usually immutable by nature. Even if you declare it as mut, it only allows you to reassign the reference, not mutate the underlying data.
-    s = "mutated string"; // string slice is reassigned to a new value
+    let mut s = String::from("Mutable string");  // String is heap-allocated and growable
+    println!("{}", s);  // Use `s` to avoid the warning
+    s = String::from("New string value");  // Reassigning a new value to `s`
 
     let mut s2 = String::from("Mutable string slice");
-    s2.clear(); // Clears the contents of the string
-    s2.push_str("Completely new content"); // Replaces the contents
+    s2.clear();
+    s2.push_str("Completely new content");
 
     println!("{}  {}", s, s2);
-    
-
+}
 
 // ! Function implementation
 
@@ -82,4 +82,3 @@ fn main() {
     //     println!("You are a woman is above 18");
     // }
 
-}
